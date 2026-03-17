@@ -2,9 +2,10 @@ import type { FC } from "react"
 
 export const Home: FC = () => {
   return (
-    <div className="font-bold text-5xl text-red-500">
-      feature/revert-test 第一次提交
-      feature/revert-test 第二次提交
+    <div>
+      <h1 className="w-screen h-[30px] bg-linear-to-bl from-violet-500 to-fuchsia-500 font-bold flex justify-center items-center text-2xl">
+        Home
+      </h1>
     </div>
   )
 }

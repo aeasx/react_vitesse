@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="64" cy="64" r="64"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#circleClip)">
+    <rect width="128" height="128" fill="#feffff"/>
+    <g transform="translate(-34, -8) scale(0.58)">
+      <g data-v-0dd9719b="" fill="#0a0a0a" class="iconlinesvg-g iconlinesvg" transform="translate(73.537318110466,101.5456314086914)">
+        <g class="tp-name">
+          <g transform="translate(0, 0)">
+            <g data-gra="path-name" fill="#0a0a0a" transform="scale(1)">
+              <path d="M35.49 0L30.93-13.44L12.17-13.44L7.35 0L1.01 0L18.51-46.39L25.61-46.39L42.34 0L35.49 0ZM21.55-39.55L14.20-19.01L28.65-19.01L21.80-39.55L21.55-39.55Z" transform="translate(-1.0140845070422533, 46.39436619718309)"></path>
+            </g>
+          </g>
+          <g transform="translate(45, 1)">
+            <g data-gra="path-name" fill="#0a0a0a" transform="scale(1)">
+              <path d="M27.38-10.65L27.38-10.65L32.96-10.65Q31.94-4.82 26.87-1.27L26.87-1.27Q24.08 0.51 17.75 0.51L17.75 0.51Q3.30 0 2.54-15.97L2.54-15.97Q3.04-34.48 18.76-34.99L18.76-34.99Q33.21-34.73 33.46-14.96L33.46-14.96L8.62-14.96Q8.62-3.80 18.51-3.80L18.51-3.80Q25.61-4.31 27.38-10.65ZM8.62-19.52L8.62-19.52L27.63-19.52Q26.87-29.66 18-29.66L18-29.66Q9.63-28.90 8.62-19.52Z" transform="translate(-2.535211267605634, 46.39436619718309)"></path>
+            </g>
+          </g>
+          <g transform="translate(79, 2.282287890374711)">
+            <g>
+              <g class="imagesvg">
+                <g>
+                  <rect fill="#0a0a0a" fill-opacity="0" stroke-width="2" x="0" y="0" width="48.72673082483107" height="42.336832669954795" class="image-rect"></rect>
+                  <svg x="0" y="0" width="48.72673082483107" height="42.336832669954795" filtersec="colorsb338352289" class="image-svg-svg primary" style="overflow: visible;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0.33000001311302185 97.52999877929688 84.73999786376953">
+                      <path fill="#0A0A0A" d="M56.2.33H41.03L.3 70.21l-.3.74 7.73 14.12h82.81l6.99-15.17L56.2.33zm37.41 68.39H31.37l5.6-10.41h40.19l-32.66-55h10.06l39.05 65.41zM58.75 55.34H38.57l9.38-17.43 10.8 17.43zM41.96 4.77l30 50.57H62.2L41.93 22.63 8.75 80.73l-5.48-9.78L41.96 4.77zm46.8 77.34H11.34l30.73-53.67 4.09 6.6L26.32 71.7h67.33l-4.89 10.41z"></path>
+                    </svg>
+                  </svg>
+                </g>
+              </g>
+            </g>
+          </g>
+          <g transform="translate(131, 0)">
+            <g data-gra="path-name" fill="#0a0a0a" transform="scale(1)">
+              <path d="M28.90-24.08L28.90-24.08L23.32-24.08Q23.32-29.92 15.21-29.92L15.21-29.92Q8.87-29.66 8.62-25.10L8.62-25.10Q8.11-21.80 14.70-20.54L14.70-20.54L20.54-19.27Q30.17-16.99 29.92-10.14L29.92-10.14Q29.41 0 16.73 0.51L16.73 0.51Q2.28 0.51 2.03-10.90L2.03-10.90L7.35-10.90Q7.86-3.80 16.73-3.80L16.73-3.80Q24.08-4.06 24.34-9.38L24.34-9.38Q24.85-12.42 17.75-14.20L17.75-14.20L10.90-15.72Q3.04-17.75 3.04-23.83L3.04-23.83Q3.55-34.23 15.97-34.99L15.97-34.99Q28.14-34.73 28.90-24.08Z" transform="translate(-2.028169014084507, 46.39436619718309)"></path>
+            </g>
+          </g>
+          <g transform="translate(162, 0)">
+            <g data-gra="path-name" fill="#0a0a0a" transform="scale(1)">
+              <path d="M31.18-33.97L19.77-17.49L31.69 0L24.59 0L15.97-12.68L7.86 0L0.76 0L12.68-17.49L1.27-33.97L8.62-33.97L16.48-21.80L24.34-33.97L31.18-33.97Z" transform="translate(-0.7605633802816901, 46.39436619718309)"></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

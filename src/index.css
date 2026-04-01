@@ -1,5 +1,21 @@
 @import "tailwindcss";
+:root {
+  --font-inter: "Inter", sans-serif;
+  --cc-bg: #f0f0f0;
+  --cc-color: #333;
+}
+
+:root.dark {
+  --cc-bg: #191919;
+  --cc-color: #f0f0f0;
+}
+
+::selection {
+  background-color: #88888848;
+}
 
 body {
-  font-family: "Inter";
+  font-family: var(--font-inter);
+  background-color: var(--cc-bg);
+  color: var(--cc-color);
 }

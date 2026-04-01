@@ -1,7 +1,7 @@
 import App from "@/App"
-import { Home } from "@/pages"
-import { Button, Result } from "antd"
-import { Link, type RouteObject } from "react-router"
+import { Home, About } from "@/pages"
+import NotFound from '@/components/ErrorPage/404'
+import type { RouteObject } from "react-router"
 
 export const routes: RouteObject[] = [
   {
@@ -9,15 +9,12 @@ export const routes: RouteObject[] = [
     Component: App,
     children: [
       { index: true, Component: Home },
+      { path: "about", Component: About },
     ],
   },
   {
     path: '*',
-    element: <Result
-      status="404"
-      title="404"
-      subTitle="Sorry, the page you visited does not exist."
-      extra={<Button type="primary"><Link to="/">Back Home</Link></Button>}
-    />
+    element: <NotFound />
   }
 ]
+

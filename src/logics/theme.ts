@@ -18,11 +18,56 @@ export const useTheme = () => {
     document.documentElement.classList.toggle("dark", isDark)
   }, [isDark])
 
-  const toggleTheme = () => {
+  const toggleTheme = (event?: React.MouseEvent) => {
     const newIsDark = !isDark
-    setIsDark(newIsDark)
-    document.documentElement.classList.toggle("dark", newIsDark)
-    localStorage.setItem("theme", newIsDark ? "dark" : "light")
+
+    // 兼容性检查和无障碍设置
+    const isAppearanceTransition =
+      'startViewTransition' in document &&
+      !window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+    if (!isAppearanceTransition || !event) {
+      setIsDark(newIsDark)
+      document.documentElement.classList.toggle("dark", newIsDark)
+      localStorage.setItem("theme", newIsDark ? "dark" : "light")
+      return
+    }
+
+    const x = event.clientX
+    const y = event.clientY
+    const endRadius = Math.hypot(
+      Math.max(x, innerWidth - x),
+      Math.max(y, innerHeight - y),
+    )
+
+    const transition = document.startViewTransition(() => {
+      setIsDark(newIsDark)
+      document.documentElement.classList.toggle("dark", newIsDark)
+      localStorage.setItem("theme", newIsDark ? "dark" : "light")
+    })
+
+    transition.ready.then(() => {
+      const clipPath = [
+        `circle(0px at ${x}px ${y}px)`,
+        `circle(${endRadius}px at ${x}px ${y}px)`,
+      ]
+
+      document.documentElement.animate(
+        {
+          clipPath: newIsDark
+            ? [...clipPath].reverse()
+            : clipPath,
+        },
+        {
+          duration: 400,
+          easing: 'ease-out',
+          fill: 'forwards',
+          pseudoElement: newIsDark
+            ? '::view-transition-old(root)'
+            : '::view-transition-new(root)',
+        },
+      )
+    })
   }
 
   return {

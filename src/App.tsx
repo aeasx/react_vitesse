@@ -6,6 +6,15 @@ function App() {
       <nav className="grid grid-cols-[30%_70%] grid-rows-[50px_auto] items-center px-4">
         <ThemeIcon />
       </nav>
+      <h1 className="my-10">
+        <ThemeIcon />
+      </h1>
+      <h1 className="my-10">
+        <ThemeIcon />
+      </h1>
+      <h1 className="my-10">
+        <ThemeIcon />
+      </h1>
       <Outlet />
     </div>
   )

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState, useEffect } from "react"
 
 export const useTheme = () => {
   const [isDark, setIsDark] = useState(() => {
@@ -75,4 +75,3 @@ export const useTheme = () => {
     toggleTheme,
   }
 }
-
